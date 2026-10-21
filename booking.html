@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання столика — Soul Kitchen Обухів</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-600">Soul Kitchen</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 text-stone-700 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+            <div class="md:hidden">
+                <a href="booking.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-medium">Бронювати</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-stone-100 py-3 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Головна</a> > Бронювання
+        </div>
+    </div>
+
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-stone-100">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-bold mb-2">Бронювання столика</h1>
+                <p class="text-stone-600">Заповніть форму нижче, і ми зв'яжемося з вами для підтвердження</p>
+            </div>
+
+            <form action="https://formsubmit.co/info@soulkitchen.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-stone-700 font-semibold mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-stone-700 font-semibold mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-stone-700 font-semibold mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-stone-700 font-semibold mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-stone-700 font-semibold mb-2">Кількість гостей</label>
+                    <select name="guests" class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition bg-white">
+                        <option value="1">1 гість</option>
+                        <option value="2" selected>2 гостя</option>
+                        <option value="3">3 гостя</option>
+                        <option value="4">4 гостя</option>
+                        <option value="5+">5+ гостей</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-stone-700 font-semibold mb-2">Побажання (необов'язково)</label>
+                    <textarea name="message" rows="3" class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Особливі побажання до замовлення..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">
+                    Забронювати столик
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Soul Kitchen</h3>
+                <p class="text-stone-400 mb-4">Затишне місце для вашого відпочинку, зустрічей з друзями та насолоди смачною їжею в Обухові.</p>
+                <p class="text-sm text-stone-400">вулиця Каштанова, 16, Обухів</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Швидка навігація</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Головна</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Про нас</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Меню</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Галерея</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Бронювання</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Контакти</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Контакти</h3>
+                <p class="text-stone-400 mb-2">Телефон: <a href="tel:+380980041541" class="text-white hover:underline">+380 98 004 1541</a></p>
+                <p class="text-stone-400 mb-4">Email: <a href="mailto:info@soulkitchen.ua" class="text-white hover:underline">info@soulkitchen.ua</a></p>
+                <p class="text-stone-400 mb-4">Працюємо щодня: 11:00 – 23:00</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/soul_kitchen_obukhiv/" target="_blank" class="text-stone-400 hover:text-white transition">Instagram</a>
+                    <a href="https://www.facebook.com/soulkitchenobukhiv" target="_blank" class="text-stone-400 hover:text-white transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-12 pt-6 border-t border-stone-800 text-center text-xs text-stone-500">
+            © 2024 Soul Kitchen. Всі права захищені.
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
